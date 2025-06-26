@@ -1,0 +1,20 @@
+{
+    "name": "shankar/country-phone-validator",
+    "description": "Laravel package to validate phone numbers using country name or dial code",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shankar\\CountryPhoneValidator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shankar\\CountryPhoneValidator\\CountryPhoneValidatorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
