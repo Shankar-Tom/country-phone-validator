@@ -6,7 +6,10 @@
     "autoload": {
         "psr-4": {
             "Shankar\\CountryPhoneValidator\\": "src/"
-        }
+        },
+        "classmap": [
+            "resources"
+        ]
     },
     "extra": {
         "laravel": {

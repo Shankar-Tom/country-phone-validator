@@ -1,6 +1,6 @@
 <?php
 
-namespace CountryPhoneValidator;
+namespace Shankar\CountryPhoneValidator;
 
 class Countries
 {

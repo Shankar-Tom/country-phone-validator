@@ -1,9 +1,9 @@
 <?php
 
-namespace CountryPhoneValidator\Rules;
+namespace Shankar\CountryPhoneValidator\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use CountryPhoneValidator\Countries;
+use Shankar\CountryPhoneValidator\Countries;
 
 class ValidPhoneByCountryName implements Rule
 {

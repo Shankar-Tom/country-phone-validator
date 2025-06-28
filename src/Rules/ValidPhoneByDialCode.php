@@ -1,9 +1,9 @@
 <?php
 
-namespace CountryPhoneValidator\Rules;
+namespace Shankar\CountryPhoneValidator\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use CountryPhoneValidator\Helpers\Countries;
+use Shankar\CountryPhoneValidator\Countries;
 
 class ValidPhoneByDialCode implements Rule
 {
@@ -16,7 +16,8 @@ class ValidPhoneByDialCode implements Rule
 
     public function passes($attribute, $value)
     {
-        $countries = include __DIR__ . '/../data/countries.php';
+        $countries = Countries::all();
+
 
         foreach ($countries as $country) {
             if ($country['dial_code'] === $this->dialCode) {
