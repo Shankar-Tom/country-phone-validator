@@ -31,6 +31,6 @@ class ValidPhoneByDialCode implements Rule
 
     public function message()
     {
-        return "The :attribute is not a valid phone number for {$this->countryName}.";
+        return "The :attribute is not a valid for {$this->countryName}.";
     }
 }
